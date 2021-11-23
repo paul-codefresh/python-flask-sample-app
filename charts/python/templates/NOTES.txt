@@ -1,4 +1,7 @@
 
+This is not the greatest test message in the world;
+This is just a tribute.. ooOOOOoo
+
 {{- if contains "NodePort" .Values.service.type }}
   Get the application URL by running these commands:
   export NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})
